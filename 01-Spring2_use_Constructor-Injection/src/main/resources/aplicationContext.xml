@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+                
+	<bean id = "empObj" class="com.pack.Employee" scope="prototype"> 
+		<constructor-arg value="123" type="int"> </constructor-arg>
+		<constructor-arg value="Bob"></constructor-arg>
+	</bean>
+	
+	<bean id = "empObj1" class="com.pack.Employee"> 
+		<constructor-arg value="124" type="int"> </constructor-arg>
+		<constructor-arg value="Alex"></constructor-arg>
+	</bean>
+</beans>
