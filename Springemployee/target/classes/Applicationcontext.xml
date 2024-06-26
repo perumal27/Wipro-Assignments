@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+    <bean id="empObj3" class="com.sts.Employee">
+        <constructor-arg value="10" type="int"/>
+        <constructor-arg value="john"/>
+        <constructor-arg value="10000" type="double"/>
+    </bean>
+
+    <!-- <bean id="empObj1" class="com.sts.Employee">
+        <property name="id" value="102" />
+        <property name="name" value="Alex" />
+    </bean> --> 
+
+</beans>
